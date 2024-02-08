@@ -107,6 +107,9 @@ export class ProfileEditorComponent {
     });
 
     // Use Angular Signals to represent form control values as signals
+    // firstNameSignal is created using the toSignal function. 
+    // represents the value of the 'firstName' form control. 
+    // so now instead of manually subscribing to the valueChanges of the form control, we can directly use the signal in our template
     this.firstnameSignal = toSignal(
       this.profileForm.get('firstname')?.valueChanges.pipe(debounceTime(300)) ??
         of(null),
