@@ -1,5 +1,11 @@
 # Angular Reactive Forms with Signals and StandAlone Components
 
+## Goal
+
+Create an standAlone component, with a reactiveForm using Signals. In this example we use Angular Signals to represent form control values as signals. `firstNameSignal` is created using the toSignal function. Represents the value of the 'firstName' form control, so now, instead of manually subscribing to the valueChanges of the form control, we can directly use the signal in our template.
+
+---
+
 ## Using signals in a reactive form with Angular has several benefits
 
 ### Efficient Updates
@@ -8,21 +14,23 @@ Signals allow you to represent form control values as signals. This means that o
 ### Seamless Integration with Reactive Forms
 Angular Signals can seamlessly integrate with reactive forms, making it easy to represent the state of form controls as signals. This integration enhances the overall reactivity and performance of your forms.
 
-## Clearer Code Structure
+### Clearer Code Structure
 Signals provide a clear and declarative way to handle updates in your application. By using signals, you can organise your code in a way that reflects the flow of data and updates, leading to cleaner and more maintainable code.
 
-## Simplified State Management
+### Simplified State Management
 Angular Signals abstract away some of the complexities of state management. By representing form control values as signals, you can simplify the way your application handles and reacts to changes, making the code more readable and maintainable.
 
-## Improved Debugging
+### Improved Debugging
 Signals make it easier to trace the flow of data and identify where updates are originating. This can be beneficial during debugging, as you have a clear structure for handling and responding to changes.
 
 ### Easily apply RxJS Operators (Debouncing, Throttling, etc) 
 With signals, you can easily apply operators like debounceTime or throttleTime to control the rate of updates. This is particularly useful in scenarios where you want to delay the reaction to user input or prevent unnecessary updates.
 
+### Selective Rendering
+Only the parts of your application that rely on a specific signal will update when its value alters. While not a virtual DOM like React, it does offer focused template updates. This means that when a signal changes, only the components or templates that depend on that particular signal will be re-rendered or updated. This is in contrast to a full re-render of the entire DOM, which can be more resource-intensive. Angular Signals achieves selective rendering by leveraging a reactive approach to data. When a signal is updated, Angular Signals intelligently identifies the parts of the application that are directly affected by that signal and updates only those parts, avoiding unnecessary updates to unrelated components.
 
-## In brief
-Using Angular Signals in reactive forms enhances the reactivity, performance, and maintainability of your Angular applications by providing a streamlined way to handle updates and manage the state of form controls.
+### In brief
+Using Angular Signals in reactive forms enhances the reactivity, performance, and maintainability of your Angular applications by providing a streamlined way to handle updates and manage the state of form controls. 
 
 ---
 
