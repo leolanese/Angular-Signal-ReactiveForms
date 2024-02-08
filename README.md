@@ -27,10 +27,10 @@ Using Angular Signals in reactive forms enhances the reactivity, performance, an
 ---
 
 ## Code
-[Angular Reactive Forms with Signals and StandAlon](https://github.com/leolanese/Angular-Signal-ReactiveForm)
+[GitHub / Angular Reactive Forms with Signals and StandAlon](https://github.com/leolanese/Angular-Signal-ReactiveForm)
 
 ## Demo
-[Angular Reactive Forms with Signals and StandAlone](https://stackblitz.com/~/github.com/leolanese/Angular-Signal-ReactiveForms)
+[StackBlitz / Angular Reactive Forms with Signals and StandAlone](https://stackblitz.com/~/github.com/leolanese/Angular-Signal-ReactiveForms)
 
 ---
 ### :100: <i>Thanks!</i>
