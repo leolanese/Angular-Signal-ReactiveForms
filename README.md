@@ -2,7 +2,7 @@
 
 ## Goal
 
-Create an standAlone component, with a reactiveForm using Signals. In this example we use Angular Signals to represent form control values as signals. `firstNameSignal` is created using the toSignal function. Represents the value of the 'firstName' form control, so now, instead of manually subscribing to the valueChanges of the form control, we can directly use the signal in our template.
+Lets Create an standAlone component, with a reactiveForm (https://angular.io/guide/reactive-forms) using Signals. In this example we use Angular Signals to represent form control values as signals. `firstNameSignal` is created using the toSignal function. Represents the value of the 'firstName' form control, so now, instead of manually subscribing to the valueChanges of the form control, we can directly use the signal in our template.
 
 ---
 
