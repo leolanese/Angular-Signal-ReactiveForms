@@ -65,24 +65,24 @@ import { debounceTime } from 'rxjs/operators';
   imports: [ReactiveFormsModule],
   template: `
     <form [formGroup]="profileForm" class="form-container" (ngSubmit)="onSubmit()">
-      <label for="firstname">First Name</label>
+      <label for="firstname">➡️ First Name</label>
       <input type="text" id="firstname" name="firstname" formControlName="firstname" placeholder="Your name">
 
-      <label for="lastname">Last Name</label>
+      <label for="lastname">➡️ Last Name</label>
       <input type="text" id="lastname" name="lastname" formControlName="lastname" placeholder="Your last name">
 
-      <label for="email">Email</label>
+      <label for="email">➡️ Email</label>
       <input type="text" id="email" name="email" formControlName="email" placeholder="Your email">
 
       <div class="gender-label">
-        <label>Gender</label>
+        <label>➡️ Gender</label>
         <input type="radio" value="male" id="gender-male" name="gender" formControlName="gender"> Male
         <input type="radio" value="female" id="gender-female" name="gender" formControlName="gender"> Female
       </div>
 
-      <label for="country">Country</label>
+      <label for="country">🌏 Country</label>
       <select id="country" name="country" formControlName="country">
-        <option value="1">UK</option>
+        <option value="1" value>UK</option>
         <option value="2">USA</option>
         <option value="3">Argentina</option>
         <option value="4">Brasil</option>
